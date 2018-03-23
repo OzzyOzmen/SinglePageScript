@@ -1,0 +1,305 @@
+/*
+Not: eger class ise basına nokta id ise basına # koyuyorsunuz.
+
+*/
+
+/* Home & Features Section */
+
+.navbar{  /* burada üst navbardaki o mavi ince çizgiyi yaptık ve renk verdik */
+
+    border-bottom: #1886C7 2px solid;
+    }
+.navbar-brand{ /* burada üst navbardaki Logo ya yani biz yazı yazdık ona renk ve yazı boyutu verdikk */
+    
+        color:#1886C7 !important;
+        font-size:25px;
+    }
+.nav-link{  /* burada üst navbardaki menümüze renk verdik ve renk geçişi ekledik */
+    
+        color:white !important;
+        text-transform:uppercase;
+        transition: .5s;
+    
+    }
+.nav-link:hover{  /* burada üst navbardaki menünün üstüne gelince renk geçişi yaptık yani maviye cevirdik */
+    
+        color:#1886C7 !important;
+    }
+#headerSection .carousel-item{
+        height: 100vh;
+        min-height: 300px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    
+}
+   
+/* Features Kısmı */
+
+#features .fab{ /* Awesome fontuma boyut verdim */
+
+    font-size: 40px;
+}
+.feature-top{ /* font ve h4 baslıkalrımın üstüne geldiğimde renk degiştirsin */
+
+   
+    transition: color .5s ease;
+}
+.feature-top:hover{ /* font ve h4 baslıkalrımın üstüne geldiğimde renk degiştirsin */
+
+    color:#1886C7 ;
+    cursor: pointer;
+}
+
+/* Hakkimizda Kısmı*/
+
+#Hakkimizda h2{ /* burada başlık basına mavi ayırıcı borderimizi koyduk ve  başlığa renk ile tıklanma efekti verdik */
+    
+    border-left: 6px solid #1886C7;
+    padding-left:30px;
+    color:#1886C7 ;
+    cursor: pointer;
+   
+}
+
+#Hakkimizda .col-md-6{ /* burada başlık basına mavi ayırıcı borderimizi koyduk ve  başlığa renk ile tıklanma efekti verdik */
+    
+    display: inline;
+}
+#Hakkimizda .btn-outline-primary{
+    position: absolute;
+   
+}
+#Hakkimizda .p{
+
+line-height: 20px;
+}
+
+/* Takım Kısmı */
+
+#takim .card{  /* card kısımlarının etrafındaki borderi kaldırdık ve geerisi diger işlemler işle aynı */
+    border: none;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+#takim .card:hover{ /* card hover işlemi yaptık yani rengi açtık diyebilirim anlayacağınız dilde */
+
+  opacity: 1;  
+}
+#takim .fab{
+
+    font-size: 24;  
+}
+
+  /* Ne Yapıyoruz Kısmı */
+
+  #Neyapiyoruz {
+    
+     background:url('../images/programming.jpg') no-repeat center center fixed;
+     height: 40vh;
+  }
+
+  #Neyapiyoruz .far { /* fontawesome icon boyutu girdik */
+    
+    font-size: 60px;
+
+ }
+
+ #Neyapiyoruz h2 { /* h2 tagi olarak tanımladığımız yazıya özellik verdik */
+    
+    color:#1886C7 !important;
+    text-transform:uppercase;
+    font-weight: bold;
+    transition: .5s;
+
+ }
+ #Neyapiyoruz .p { /* Neyapıyoruz kısmındaki paragraf a renk ve yükseklik girdik */
+    line-height: 20px;
+    color:#1886C7 !important;
+}
+
+ #PlayModal h4 { /* PlayModal clasımızdaki h4 tagi olarak yazdıgımız baslığa özellik girdik */
+    
+    color:#1886C7 !important;
+    text-transform:uppercase;
+
+ }
+ #PlayModal .i { /* PlayModal clasımızdaki play butonumuzun etrafındaki borderi kaldırdık */
+    
+    border: none;
+
+ }
+
+ /* Hizmetlerimiz Kısmı*/
+
+ #Hizmetlerimiz{ /* burada başlığa renk ile tıklanma efekti verdik */
+    
+  
+    background-color: #f4f5f9;
+  
+    line-height: 28px;
+}
+.yazidivi { /* burada divimize renk ve ölçülendirme girdik */
+    
+    background-color: #fff;
+    margin-top: 20px;
+   /* margin-right: -40px;*/   
+    z-index:100;
+    padding: 40px;
+    position: relative;
+    min-height: 40px;
+   
+   
+}
+#Hizmetlerimiz .p{
+
+    text-align: center;
+}
+
+#Hizmetlerimiz h2{ /* burada başlığa renk ile tıklanma efekti verdik */
+    
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color:#1886C7 ;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+ .hizmetresim{ /* Resimimize ölçü verdik */
+    
+    margin-left: -40px;
+
+ }
+ 
+ /* Referanslar Kısmı */
+
+ #Referanslarimiz .col-md-3{ /* ölçülendirdik*/
+
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+
+ }
+ #Referanslarimiz h4{ /* font ölçülendirmesi yaptık */
+
+   font-size: 16px;
+   font-weight: 300;
+
+ }
+ #Referanslarimiz .fas{
+
+    font-size: 24px;
+    margin-bottom: 20px;
+
+ }
+ #Referanslarimiz .p{ /* font ölçülendirmesi yaptık */
+
+   font-size: 14px;
+   font-weight: 300;
+
+ }
+
+ .imageContainer{
+
+    position: relative;
+    cursor: pointer;
+ }
+
+ .imageOverlay{
+  
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1886C7;
+    opacity: 0;
+    transition: 1s ease;
+
+ }
+
+ .imageContainer:hover .imageOverlay{
+   
+    opacity: .7;
+
+ }
+ .imagetext{
+
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ }
+
+ /* Yorumlar Kısmı */
+
+ #Yorumlar {
+    background: linear-gradient(
+     rgba(0, 0,0, .7),
+     rgba(0, 0,0, .7)
+    ),
+     url('../images/yorumlar.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+  
+ }
+
+.yorumlar{
+    
+    color:rgba(24, 134, 199, .6);
+}
+
+.carousel-item img{
+ 
+    opacity: .5;
+
+}
+
+.blockquote-footer{
+    color: #1886C7;
+}
+
+ /* İletişim Kısmı */
+
+ #iletisim{
+
+    background-color: #f4f5f9;
+
+ }
+ #iletisim h2{
+
+   color: #1886C7;
+
+ }
+
+ #iletisim h3{
+
+    color: #1886C7;
+ }
+
+#iletisim .input-group-text{
+
+    border-radius: 0;
+    color: white;
+    background-color: #1886C7;
+}
+
+#footer{
+
+     color:white !important;
+     background-color:#343A40 !important;
+     
+}
+#footer .col-md-6{
+
+    color:white !important;
+    background-color:#343A40 !important;
+    
+}
