@@ -1,27 +1,27 @@
 /*
-Not: eger class ise basına nokta id ise basına # koyuyorsunuz.
+Ozzy Ozmen Celik
 
 */
 
 /* Home & Features Section */
 
-.navbar{  /* burada üst navbardaki o mavi ince çizgiyi yaptık ve renk verdik */
+.navbar{  
 
     border-bottom: #1886C7 2px solid;
     }
-.navbar-brand{ /* burada üst navbardaki Logo ya yani biz yazı yazdık ona renk ve yazı boyutu verdikk */
+.navbar-brand{ 
     
         color:#1886C7 !important;
         font-size:25px;
     }
-.nav-link{  /* burada üst navbardaki menümüze renk verdik ve renk geçişi ekledik */
+.nav-link{  
     
         color:white !important;
         text-transform:uppercase;
         transition: .5s;
     
     }
-.nav-link:hover{  /* burada üst navbardaki menünün üstüne gelince renk geçişi yaptık yani maviye cevirdik */
+.nav-link:hover{  
     
         color:#1886C7 !important;
     }
@@ -38,16 +38,16 @@ Not: eger class ise basına nokta id ise basına # koyuyorsunuz.
    
 /* Features Kısmı */
 
-#features .fab{ /* Awesome fontuma boyut verdim */
+#features .fab{
 
     font-size: 40px;
 }
-.feature-top{ /* font ve h4 baslıkalrımın üstüne geldiğimde renk degiştirsin */
+.feature-top{
 
    
     transition: color .5s ease;
 }
-.feature-top:hover{ /* font ve h4 baslıkalrımın üstüne geldiğimde renk degiştirsin */
+.feature-top:hover{ 
 
     color:#1886C7 ;
     cursor: pointer;
@@ -55,7 +55,7 @@ Not: eger class ise basına nokta id ise basına # koyuyorsunuz.
 
 /* Hakkimizda Kısmı*/
 
-#Hakkimizda h2{ /* burada başlık basına mavi ayırıcı borderimizi koyduk ve  başlığa renk ile tıklanma efekti verdik */
+#Hakkimizda h2{
     
     border-left: 6px solid #1886C7;
     padding-left:30px;
@@ -64,7 +64,7 @@ Not: eger class ise basına nokta id ise basına # koyuyorsunuz.
    
 }
 
-#Hakkimizda .col-md-6{ /* burada başlık basına mavi ayırıcı borderimizi koyduk ve  başlığa renk ile tıklanma efekti verdik */
+#Hakkimizda .col-md-6{ 
     
     display: inline;
 }
@@ -79,14 +79,14 @@ line-height: 20px;
 
 /* Takım Kısmı */
 
-#takim .card{  /* card kısımlarının etrafındaki borderi kaldırdık ve geerisi diger işlemler işle aynı */
+#takim .card{  
     border: none;
     opacity: 0.5;
     cursor: pointer;
     transition: all 0.5s ease;
 
 }
-#takim .card:hover{ /* card hover işlemi yaptık yani rengi açtık diyebilirim anlayacağınız dilde */
+#takim .card:hover{
 
   opacity: 1;  
 }
@@ -103,13 +103,13 @@ line-height: 20px;
      height: 40vh;
   }
 
-  #Neyapiyoruz .far { /* fontawesome icon boyutu girdik */
+  #Neyapiyoruz .far { 
     
     font-size: 60px;
 
  }
 
- #Neyapiyoruz h2 { /* h2 tagi olarak tanımladığımız yazıya özellik verdik */
+ #Neyapiyoruz h2 { 
     
     color:#1886C7 !important;
     text-transform:uppercase;
@@ -117,18 +117,18 @@ line-height: 20px;
     transition: .5s;
 
  }
- #Neyapiyoruz .p { /* Neyapıyoruz kısmındaki paragraf a renk ve yükseklik girdik */
+ #Neyapiyoruz .p { 
     line-height: 20px;
     color:#1886C7 !important;
 }
 
- #PlayModal h4 { /* PlayModal clasımızdaki h4 tagi olarak yazdıgımız baslığa özellik girdik */
+ #PlayModal h4 { 
     
     color:#1886C7 !important;
     text-transform:uppercase;
 
  }
- #PlayModal .i { /* PlayModal clasımızdaki play butonumuzun etrafındaki borderi kaldırdık */
+ #PlayModal .i { 
     
     border: none;
 
@@ -136,14 +136,14 @@ line-height: 20px;
 
  /* Hizmetlerimiz Kısmı*/
 
- #Hizmetlerimiz{ /* burada başlığa renk ile tıklanma efekti verdik */
+ #Hizmetlerimiz{ 
     
   
     background-color: #f4f5f9;
   
     line-height: 28px;
 }
-.yazidivi { /* burada divimize renk ve ölçülendirme girdik */
+.yazidivi { 
     
     background-color: #fff;
     margin-top: 20px;
@@ -160,7 +160,7 @@ line-height: 20px;
     text-align: center;
 }
 
-#Hizmetlerimiz h2{ /* burada başlığa renk ile tıklanma efekti verdik */
+#Hizmetlerimiz h2{ 
     
     font-size: 18px;
     margin-top: 40px;
@@ -169,7 +169,7 @@ line-height: 20px;
     cursor: pointer;
     transition: all 0.5s ease;
 }
- .hizmetresim{ /* Resimimize ölçü verdik */
+ .hizmetresim{
     
     margin-left: -40px;
 
@@ -177,14 +177,14 @@ line-height: 20px;
  
  /* Referanslar Kısmı */
 
- #Referanslarimiz .col-md-3{ /* ölçülendirdik*/
+ #Referanslarimiz .col-md-3{ 
 
     padding-left: 0;
     padding-right: 0;
     text-align: center;
 
  }
- #Referanslarimiz h4{ /* font ölçülendirmesi yaptık */
+ #Referanslarimiz h4{ 
 
    font-size: 16px;
    font-weight: 300;
@@ -196,7 +196,7 @@ line-height: 20px;
     margin-bottom: 20px;
 
  }
- #Referanslarimiz .p{ /* font ölçülendirmesi yaptık */
+ #Referanslarimiz .p{ 
 
    font-size: 14px;
    font-weight: 300;
