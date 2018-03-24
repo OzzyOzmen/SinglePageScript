@@ -9,12 +9,18 @@
   <!-- fontawesome CSS >-->
   <link rel="stylesheet" href="css/fontawesome-all.css">
   <!-- Bootstrap CSS -->
-  <!-- önce bootstrap cssi eklenir sonra bizim kendi eklediğimiz -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <!-- Lighbox CSS -->
   <link rel="stylesheet" href="css/lightbox.css">
   <!-- site CSS -->
-  <link rel="stylesheet" href="css/site2.css">
+  <link rel="stylesheet" href="css/site.css">
+  <!-- Scroll Reveal JS -->
+  <script src="js/scrollreveal.js"></script>
+  <script>
+    window.sr = ScrollReveal();
+  </script>
+
+
   <title>PROJE-1</title>
 </head>
 
@@ -22,25 +28,19 @@
 
   <!-- Nav Menu Başlangıcı -->
 
-  <nav class="navbar navbar-expand-md  navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-md nav-dark bg-dark fixed-top">
     <!-- Sitenin en üstündeki çizgi kısmı  -->
     <div class="container">
-      <!-- menüler içine ekledğimiz kısım ve bunun navın içinde olma sebebi üst kısm cizgi gibi olsun istememizdi-->
       <button class="navbar-toggler" data-toggle="collapse" data-target="#nvbCollapse">
-        <!-- toggler barımız yani akordiyon menümüz-->
         <span class="navbar-toggler-icon"></span>
-        <!-- toggler barımızın ikonu -->
       </button>
-      <a href="index2.html" class="navbar-brand">PROJE-1</a>
-      <!-- Logo yerine kullandıgımız yazı logo gibide düşünebilirsiniz. -->
+      <a href="index.html" class="navbar-brand">PROJE-1</a>
       <div class="collapse navbar-collapse" id="nvbCollapse">
         <!-- Menü divi -->
         <ul class="navbar-nav ml-auto">
-          <!--  Menü fakat birde ml-auto ile sağa yaslıyoruz -->
-          <!--  Alttada zaten menü isimleri ve linkleri -->
 
           <li class="nav-item">
-            <a class="nav-link" href="#headerSection">ANASAYFA</a>
+            <a class="nav-link" href="#header">ANASAYFA</a>
           </li>
 
           <li class="nav-item">
@@ -63,53 +63,37 @@
 
   <!-- Header Başlangıcı -->
 
-  <header>
-    <div id="headerSection" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#headerSection" data-slide-to="0" class="active"></li>
-        <li data-target="#headerSection" data-slide-to="1"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" style="background-image: url('images/nv-bg.jpg')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Başlık-1</h3>
-            <p>Açıklama yazısı buraya.</p>
-          </div>
-        </div>
-        <div class="carousel-item" style="background-image: url('images/programming.jpg')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Başlık-2</h3>
-            <p>Açıklama yazısı buraya.</p>
-          </div>
-        </div>
+  <header id="header">
 
+    <div class="overlay">
+
+      <div class="container">
+
+        <div class="row text-center hSection">
+
+          <div class="col my-auto">
+            <h1 class="display-4">
+              <span>PROJE-1</span>Deneme Template</h1>
+            <p class="text-muted">
+              <em>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.
+              </em>
+            </p>
+            <button type="button" class="btn btn-outline-primary">Devamını Oku</button>
+          </div>
+        </div>
       </div>
-      <a class="carousel-control-prev" href="#headerSection" role="button" data-slide="prev" >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Önceki</span>
-      </a>
-      <a class="carousel-control-next" href="#headerSection" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Sonraki</span>
-      </a>
     </div>
+
   </header>
-
   <!-- Header Sonu -->
-
   <!-- Features Başlangıcı -->
 
   <section id="features" class="pt-5">
-    <!-- Features sectionumu olusturdum ve pt-5 yani padding tab 5 boyutu verdim -->
     <div class="container">
       <div class="row mt-5">
-        <!-- Buraya da margin tab 5 verdim -->
         <div class="col-md-3 text-center">
           <div class="features">
             <div class="feature-top">
-              <!-- Buraya yeni class oluşturdumki icon ve baslık beraber renk değiştirsin. -->
-              <!-- Ve artık her bir gridime ızgarama geçip font baslık ve mini acıklama giriyorum. -->
-              <!-- ben yaklasık 12 kolon olarak düşündüm o yüzden her bir margintaba 3 verdim e 4 tane olduğu içinde 3*4=12 kolon oldu. -->
               <i class="fab fa-html5"></i>
               <h4 class="mt-3">HTML5</h4>
             </div>
@@ -169,11 +153,9 @@
   <section id="Hakkimizda">
     <div class="container">
       <div class="row mt-5">
-        <!-- burada neden margin 6 verdim? Çünkü üsttekiler 4 ertaneden 12 kolon yer kapladıgından ben buefer 2 kolon kulanacağımdan 1 i pc resmi digeride about us kısmı o yüzden 12/2 = 6 olarak düşündüm ve 6 verdim. -->
         <div class="col-md-6 hakkimizdaImageSection ">
 
           <img src="images/aboutus.png" class="img-fluid" alt="Hakkımızda">
-          <!-- img-fluid clasını ekrana göre resimide büyültüp küçültmesi için yani sıpdırması için yaptım -->
         </div>
 
         <div class="col-md-6 hakkimizdaYaziSection">
@@ -201,15 +183,11 @@
   <!-- Takım Üyeleri Başlangıcı -->
 
   <section id="takim" class="mt-5">
-    <!-- Team sectionumu olusturdum ve mt-5 yani margin tab 5 boyutu verdim -->
     <div class="container">
       <div class="row">
         <div class="col md-3">
-          <!-- Ortaladık -->
           <div class="card text-center">
-            <!-- card için block oluşturduk bildiğiniz blok -->
             <div class="card-block">
-              <!-- Aşağıdaki my-auto (margin-y ekseninde otomatik ayarla yani ortala) yazıları dikey olarak hizalıyor  -->
               <img src="images/ozzy.jpg" class="img-fluid rounded-circle my-4">
               <h3>Ozzy</h3>
               <h5 class="text-muted">Manager </h5>
@@ -217,23 +195,19 @@
                 <em>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.
                 </em>
               </p>
-              <!--  -->
               <div class="d-flex flex-row justify-content-center">
 
                 <div class="p-4">
-                  <!-- padding 4 verdik -->
                   <a href="#">
                     <i class="fab fa-facebook"></i>
                   </a>
                 </div>
                 <div class="p-4">
-                  <!-- padding 4 verdik -->
                   <a href="#">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </div>
                 <div class="p-4">
-                  <!-- padding 4 verdik -->
                   <a href="#">
                     <i class="fab fa-linkedin"></i>
                   </a>
@@ -243,11 +217,8 @@
           </div>
         </div>
         <div class="col md-3">
-          <!-- Ortaladık -->
           <div class="card text-center">
-            <!-- card için block oluşturduk bildiğiniz blok -->
             <div class="card-block">
-              <!-- Aşağıdaki my-auto (margin-y ekseninde otomatik ayarla yani ortala) yazıları dikey olarak hizalıyor  -->
               <img src="images/Maria.jpg" class="img-fluid rounded-circle my-4">
               <h3>Maria</h3>
               <h5 class="text-muted">Fullstack Devoloper</h5>
@@ -255,23 +226,19 @@
                 <em>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.
                 </em>
               </p>
-              <!--  -->
               <div class="d-flex flex-row justify-content-center">
 
                 <div class="p-4">
-                  <!-- padding 4 verdik -->
                   <a href="#">
                     <i class="fab fa-facebook"></i>
                   </a>
                 </div>
                 <div class="p-4">
-                  <!-- padding 4 verdik -->
                   <a href="#">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </div>
                 <div class="p-4">
-                  <!-- padding 4 verdik -->
                   <a href="#">
                     <i class="fab fa-linkedin"></i>
                   </a>
@@ -281,11 +248,8 @@
           </div>
         </div>
         <div class="col md-3">
-          <!-- Ortaladık -->
           <div class="card text-center">
-            <!-- card için block oluşturduk bildiğiniz blok -->
             <div class="card-block">
-              <!-- Aşağıdaki my-auto (margin-y ekseninde otomatik ayarla yani ortala) yazıları dikey olarak hizalıyor  -->
               <img src="images/Joe.jpg" class="img-fluid rounded-circle my-4">
               <h3>Joe</h3>
               <h5 class="text-muted">Frondend Devoloper</h5>
@@ -293,23 +257,21 @@
                 <em>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.
                 </em>
               </p>
-              <!--  -->
               <div class="d-flex flex-row justify-content-center">
 
                 <div class="p-4">
-                  <!-- padding 4 verdik -->
                   <a href="#">
                     <i class="fab fa-facebook"></i>
                   </a>
                 </div>
                 <div class="p-4">
-                  <!-- padding 4 verdik -->
+
                   <a href="#">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </div>
                 <div class="p-4">
-                  <!-- padding 4 verdik -->
+
                   <a href="#">
                     <i class="fab fa-linkedin"></i>
                   </a>
@@ -319,11 +281,10 @@
           </div>
         </div>
         <div class="col md-3">
-          <!-- Ortaladık -->
+
           <div class="card text-center">
-            <!-- card için block oluşturduk bildiğiniz blok -->
+
             <div class="card-block">
-              <!-- Aşağıdaki my-auto (margin-y ekseninde otomatik ayarla yani ortala) yazıları dikey olarak hizalıyor  -->
               <img src="images/Angeline.jpg" class="img-fluid rounded-circle my-4">
               <h3>Angeline</h3>
               <h5 class="text-muted">Backend Devoloper</h5>
@@ -331,23 +292,23 @@
                 <em>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.
                 </em>
               </p>
-              <!--  -->
+
               <div class="d-flex flex-row justify-content-center">
 
                 <div class="p-4">
-                  <!-- padding 4 verdik -->
+
                   <a href="#">
                     <i class="fab fa-facebook"></i>
                   </a>
                 </div>
                 <div class="p-4">
-                  <!-- padding 4 verdik -->
+
                   <a href="#">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </div>
                 <div class="p-4">
-                  <!-- padding 4 verdik -->
+
                   <a href="#">
                     <i class="fab fa-linkedin"></i>
                   </a>
@@ -364,21 +325,19 @@
   <!-- Ne Yapıyoruz Başlangıcı -->
 
   <section id="Neyapiyoruz">
-    <!--Bölüm yani sectionınımıza id verdik -->
 
     <div class="container">
       <div class="row">
 
         <div class="col-md-12 text-center">
-          <!-- tek kolon olarak düşündüğümüzde 12 verdik ve ortaladık -->
+
           <h2 class="pt-5"> Ne Yapıyoruz ?</h2>
           <p>
             <span style="color:white"> Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.</span>
           </p>
-          <!-- Aşağıda 12 değilde 6 vermemizin sebebi gereksiz yere yer kaplamasındansa mx-auto yani x düzleminde marginini auto yaparak ortaladık zaten  -->
           <div class="col-md-6 text-center mx-auto">
             <a href="#" data-toggle="modal" data-target="#PlayModal">
-              <!--tıklayınca acılan bir oda tanımladık id sinide PlayModal verdik -->
+
               <i class="far fa-play-circle"></i>
             </a>
           </div>
@@ -391,34 +350,28 @@
 
   <!-- Ne Yapıyoruz Modal Başlangıcı -->
 
-  <!--Yukarıda tanımlamış olduğumuz modal id sini div idsine verdik -->
+
   <div id="PlayModal" class="modal fade" role="dialog">
-    <!--Aşağıda açılır bir modal yani dialog moda pencceresini belirten sınıfı yazdık -->
+
     <div class="modal-dialog">
       <div class="modal-content">
-        <!--Modal header derken modal üst kısım ı kast ediyoruz -->
+
         <div class="modal-header">
-          <!--Aşağıda modal header title yani modal üst kısım başlık girdik -->
+
           <h4 class="modal-title">Biz Ne Yapıyoruz ?</h4>
-          <!--Aşağıda x görünümünde bir buton ekledik kapanamsı için data-dissniss girdik çarpı işareti olamsı içinde &times; girdik -->
           <button id="btnclose" type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-        <!--Aşağıda modal body yani orta kısım content kısmı oluşturduk-->
         <div class="modal-body">
           <p class="text-muted">
-            <!--Aşağıda modal body yani orta kısım content kısmına paragraf olarak yazı ekledik-->
             <em>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.
             </em>
           </p>
           <p>
-            <!--Aşağıda modal body yani orta kısım content kısmına youtube embed kodu ekledik-->
-            <!-- 4:3 aspect ratio -->
             <div class="embed-responsive embed-responsive-4by3">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dLP8A3tlmQU" allow="autoplay" ;></iframe>
             </div>
           </p>
         </div>
-        <!--Aşağıda modal footer yani alt kısım oluşturduk ve orayada bir kapat butonu koyduk-->
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-primary text-center mx-auto" data-dismiss="modal">Pencereyi Kapat</button>
         </div>
@@ -593,7 +546,7 @@
 
   <!-- Yorumlar Başlangıcı -->
   <section id="Yorumlar" class="text-center py-5">
-    <!--Bölüm yani sectionınımıza id verdik -->
+
 
     <div class="container">
       <div class="row">
@@ -686,19 +639,19 @@
           </p>
           <div class="d-flex flex-row">
             <div class="p-2">
-              <!-- padding 4 verdik -->
+
               <a href="#">
                 <i class="fab fa-facebook fa-2x"></i>
               </a>
             </div>
             <div class="p-2">
-              <!-- padding 4 verdik -->
+
               <a href="#">
                 <i class="fab fa-twitter fa-2x"></i>
               </a>
             </div>
             <div class="p-2">
-              <!-- padding 4 verdik -->
+
               <a href="#">
                 <i class="fab fa-linkedin fa-2x"></i>
               </a>
@@ -787,6 +740,37 @@
   <script>
     var scroll = new SmoothScroll('a[href*="#"]');
   </script>
+
+  <script>
+    sr.reveal('.hSection', {
+      duration: 2000
+    });
+    sr.reveal('.features', {
+      duration: 2000
+    });
+    sr.reveal('.hakkimizdaImageSection', {
+      duration: 2000
+    });
+    sr.reveal('.hakkimizdaYaziSection', {
+      duration: 2000
+    });
+
+    sr.reveal('#takim', {
+      duration: 2000
+    });
+    sr.reveal('#Referanslarimiz', {
+      duration: 2000
+    });
+    sr.reveal('.iletisim1', {
+      duration: 2000
+    });
+    sr.reveal('.iletisim2', {
+      duration: 2000
+    });
+
+
+  </script>
+
 </body>
 
 </html>
